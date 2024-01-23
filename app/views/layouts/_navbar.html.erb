@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag "navbar" %>
+
+<div class="navbar">
+<%= link_to root_path do %>
+  <%= image_tag "tree.png", :class => "logo" %>
+<% end %>
+
+  <div>
+  <% if user_signed_in? %>
+    <%= link_to "Log out", destroy_user_session_path, :class => "button" %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path, :class => "button" %>
+    <%= link_to "Log in", new_user_session_path, :class => "button" %>
+  <% end %>
+  </div>
+</div>

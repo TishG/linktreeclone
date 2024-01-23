@@ -1,0 +1,7 @@
+<h1>Home</h1>
+
+<%= link_to "New Tree", new_tree_path %>
+
+<% if current_user %>
+<%= link_to "View my tree", current_user.tree %>
+<% end %>

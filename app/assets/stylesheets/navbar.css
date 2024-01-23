@@ -1,0 +1,38 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	width: 50px;
+}
+
+.button {
+	border-radius: 0.2rem;
+}
+
+.navbar {
+	padding: 0.5em;
+	background-color: #e56399;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .button {
+	color: #e5d4ce;
+	font-size: 1.2rem;
+	padding: 0.5em;
+}
+
+.navbar .button:hover {
+	background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
